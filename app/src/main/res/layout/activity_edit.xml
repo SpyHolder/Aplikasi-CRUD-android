@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:orientation="vertical"
+    android:background="@color/card">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Daftar Tamu"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <EditText
+                android:id="@+id/nama_tamu_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Tamu"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/keperluan_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Keperluan"
+                android:inputType="text"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/perusahaan_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Perusahaan"
+                android:inputType="text"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/jam_masuk_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jam Masuk"
+                android:inputType="text"
+                android:layout_marginTop="1dp"/>
+            <EditText
+                android:id="@+id/jam_keluar_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jam Keluar"
+                android:inputType="text"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foto Bukti Keterangan"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"/>
+            <ImageView
+                android:id="@+id/keterangan"
+                android:onClick="pilihGambar"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/btn"
+                android:onClick="save"
+                android:text="save" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/nama_tamu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Tamu"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/keperluan_tamu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keperluan"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/perusahaan_tamu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perusahaan"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

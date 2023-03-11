@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:background="@color/card">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detail Daftar Tamu"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Tamu" />
+            <TextView
+                android:id="@+id/nama_tamu_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="nama_tamu"
+                android:textSize="17sp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keperluan"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/keperluan_tamu_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="keperluan_tamu"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perusahaan"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/perusahaan_tamu_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="perusahaan_tamu"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jam Masuk"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/jam_masuk_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="jam_masuk_tamu"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jam Keluar"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/jam_keluar_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="jam_keluar_tamu"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foto Bukti Keterangan"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/foto_keterangan_detail"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
